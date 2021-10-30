@@ -3,6 +3,7 @@ import * as helloController from "./controllers/helloController.js";
 
 const router = new Router();
 
-router.get("/", helloController.hello);
+router.get("/", helloController.hello)
+    .get("/secret", helloController.secret);
 
 export default router;
